@@ -1,5 +1,29 @@
 
 /* ===== HOME WEBPAGE STYLING ===== */
+/* == ANNOUNCEMENTS == */
+.announcements {
+  width: 100%;
+  background-color: var(--light-peachy);
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.90rem;
+  font-weight: 650;
+  text-align: center;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+  overflow: hidden;
+}
+
+.announcements p {
+  margin: 0;
+  opacity: 0;
+  color: white;
+  transform: translateX(-40px);
+  animation: slide-in 2s ease forwards;
+}
+
 /* == SECTIONS == */
 .heading-section {
   padding: 20px;
@@ -147,6 +171,7 @@
   background-color: darkorange;
   transform: translateY(-2px);
 }
+
 @keyframes inset-out {
   from {
     inset: 50px;
@@ -155,9 +180,21 @@
     inset: -5px;
   }
 }
+
 @keyframes switch-colors {
   0%   { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media (min-width: 10px) {
