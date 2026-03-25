@@ -1,59 +1,67 @@
 /* =========================
    LAYOUT
 ========================= */
+main {
+  top: 0;
+  bottom: 0;
+  padding-top: -50px;
+}
+header {
+  padding-bottom: 3%;
+}
 .project-container {
-   max-width: 1000px;
-   margin: 0 auto;
-   padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .project-grid {
-   display: grid;
-   grid-template-columns: 1fr;
-   gap: 1rem;
-   min-height: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  min-height: 600px;
 }
 
 @media (min-width: 768px) {
-   .project-grid {
-      grid-template-columns: repeat(2, 1fr);
-   }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* =========================
    FILTERS
 ========================= */
 .filter-options {
-   display: flex;
-   gap: 0.5rem;
-   justify-content: center;
-   margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .filter-button {
-   font-family: 'Rubik', sans-serif;
-   font-size: 1rem;
-   padding: 0.6rem 1rem;
-   border-radius: 999px;
-   background: rgba(255, 255, 255, 0.08);
-   color: white;
-   cursor: pointer;
-   border: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
 .filter-button.is-active {
-   background: var(--peachy);
+  background: var(--peachy);
 }
 
 /* =========================
    CARD
 ========================= */
 .project-card {
-   display: block;
+  display: block;
 }
 
 .project-card.hidden {
-   display: none;
+  display: none;
 }
 
 .project-card-inner {
@@ -71,8 +79,8 @@
 }
 
 .project-card-inner:hover {
-   transform: translateY(-4px);
-   border-color: rgba(0, 243, 150, 0.644);
+  transform: translateY(-4px);
+  border-color: rgba(0, 243, 150, 0.644);
 }
 
 .project-footer {
@@ -86,42 +94,42 @@
    TITLE
 ========================= */
 .project-title-row {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-title {
-   color: white;
+  color: white;
 }
 
 /* =========================
    STATUS
 ========================= */
 .status {
-   font-size: 0.8rem;
-   padding: 4px 8px;
-   border-radius: 999px;
-   font-weight: 750;
-   font-family: 'REM', sans-serif;
-   color: white;
-   text-align: center;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-weight: 750;
+  font-family: 'REM', sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .status.released {
-   background: var(--released-status);
+  background: var(--released-status);
 }
 
 .status.coming {
-   background: var(--coming-status);
+  background: var(--coming-status);
 }
 
 .status.dev {
-   background: var(--dev-status);
+  background: var(--dev-status);
 }
 
 .status.demo {
-   background: var(--demo-status);
+  background: var(--demo-status);
 }
 
 /* =========================
@@ -129,30 +137,30 @@
 ========================= */
 .project-desc {
   min-height: 90px;
-   margin: 1rem 0;
-   color: rgba(255, 255, 255, 0.85);
+  margin: 1rem 0;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* =========================
    TAGS
 ========================= */
 .skill-tags {
-   display: flex;
-   gap: 0.5rem;
-   flex-wrap: wrap;
-   margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
 .tag {
-   font-size: 0.90rem;
-   padding: 4px 8px;
-   border-radius: 999px;
-   background: rgba(255, 255, 255, 0.08);
-   transition: all 0.2s ease;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
 }
 
 .tag:hover {
-   background: var(--peachy);
+  background: var(--peachy);
 }
 
 /* =========================
@@ -165,64 +173,64 @@
 }
 
 .icon-btn {
-   display: inline-flex;
-   align-items: center;
-   gap: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 
-   text-decoration: none;
-   font-family: 'Rubik', sans-serif;
-   font-weight: 600;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
 
-   color: white;
-   padding: 0.55rem 0.75rem;
-   border-radius: 10px;
+  color: white;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
 
-   background: rgba(255, 255, 255, 0.08);
-   border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 
-   transition:
-      transform 0.2s ease,
-      background 0.2s ease,
-      box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .icon-btn:hover {
-   transform: translateY(-2px);
-   background: var(--peachy);
+  transform: translateY(-2px);
+  background: var(--peachy);
 }
 
 .icon-btn img {
-   width: 18px;
-   height: 18px;
-   display: block;
-   object-fit: contain;
-   filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.18));
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.18));
 }
 /* =========================
    PAGINATION
 ========================= */
 .pagination {
-   display: flex;
-   justify-content: center;
-   gap: 1rem;
-   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .pagination button {
-   display: inline-block;
-   position: relative;
-   padding: 0.5rem 1rem;
-   border-radius: 6px;
-   border: none;
-   cursor: pointer;
-   background: var(--peachy);
-   color: white;
-   transition: all 0.2s ease;
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: var(--peachy);
+  color: white;
+  transition: all 0.2s ease;
 }
 
 .pagination button:hover:not(:disabled) {
-   background: var(--peachy-blue);
+  background: var(--peachy-blue);
 }
 .pagination button:disabled {
-   opacity: 0.4;
+  opacity: 0.4;
 }

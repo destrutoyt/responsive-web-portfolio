@@ -1,251 +1,294 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>MG | Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./styling/main.css" />
-  <link rel="stylesheet" href="./styling/projects.css" />
-  <script defer src="./functionality/projectFunctionality.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MG | Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styling/main.css" />
+    <link rel="stylesheet" href="./styling/projects.css" />
+    <script defer src="./functionality/projectFunctionality.js"></script>
+  </head>
 
-<body>
-  <header class="fade-in">
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a class="active" href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header class="fade-in">
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a class="active" href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section class="project-container">
-      <h1 style="color:white; text-align:center; margin-bottom:30px;">Projects</h1>
+    <main>
+      <section class="project-container">
+        <h1 style="color: white; text-align: center; margin-bottom: 30px">
+          Projects
+        </h1>
 
-      <!-- FILTERS -->
-      <div class="filter-options">
-        <button class="filter-button is-active" data-filter="all">All</button>
-        <button class="filter-button" data-filter="web-development">Web</button>
-        <button class="filter-button" data-filter="qa-testing">QA</button>
-      </div>
+        <!-- FILTERS -->
+        <div class="filter-options">
+          <button class="filter-button is-active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="web-development">
+            Web
+          </button>
+          <button class="filter-button" data-filter="qa-testing">QA</button>
+        </div>
 
-      <!-- GRID -->
-      <div class="project-grid">
+        <!-- GRID -->
+        <div class="project-grid">
+          <!-- PROJECT -->
+          <article class="project-card" data-category="web-development">
+            <div class="project-card-inner">
+              <div class="project-title-row">
+                <h3 class="project-title">eCommerce Platform</h3>
+                <span class="status dev">DEMO AVAILABLE</span>
+              </div>
 
-        <!-- PROJECT -->
-        <article class="project-card" data-category="web-development">
-          <div class="project-card-inner">
+              <p class="project-desc">
+                A full-stack eCommerce platform built with Angular for the
+                frontend and Spring Boot for the backend. It features user
+                authentication, product management, shopping cart functionality,
+                and order processing.
+              </p>
 
-            <div class="project-title-row">
-              <h3 class="project-title">eCommerce Platform</h3>
-              <span class="status dev">DEMO AVAILABLE</span>
-            </div>
+              <ul class="skill-tags">
+                <li class="tag">Angular</li>
+                <li class="tag">Spring Boot</li>
+                <li class="tag">MySQL</li>
+                <li class="tag">AWS</li>
+              </ul>
 
-            <p class="project-desc">
-              A full-stack eCommerce platform built with Angular for the frontend and Spring Boot for the backend. It features user authentication, product management, shopping cart functionality, and order processing.
-            </p>
-
-            <ul class="skill-tags">
-              <li class="tag">Angular</li>
-              <li class="tag">Spring Boot</li>
-              <li class="tag">MySQL</li>
-              <li class="tag">AWS</li>
-            </ul>
-
-            <div class="project-footer">
+              <div class="project-footer">
                 <div class="project-actions">
-                <a class="icon-btn" href="https://the-pc-market.netlify.app/" target="_blank">
-                    <img src="./images/live-web.svg" alt="">
+                  <a
+                    class="icon-btn"
+                    href="https://the-pc-market.netlify.app/"
+                    target="_blank"
+                  >
+                    <img src="./images/live-web.svg" alt="" />
                     <span>Live</span>
-                </a>
+                  </a>
                 </div>
+              </div>
             </div>
+          </article>
 
-          </div>
-        </article>
+          <!-- PROJECT -->
+          <article class="project-card" data-category="web-development">
+            <div class="project-card-inner">
+              <div class="project-title-row">
+                <h3 class="project-title">Spring Inventory Management</h3>
+                <span class="status released">RELEASED</span>
+              </div>
 
-        <!-- PROJECT -->
-        <article class="project-card" data-category="web-development">
-          <div class="project-card-inner">
+              <p class="project-desc">
+                A Spring Boot inventory management system with RESTful APIs for
+                CRUD operations, product categorization, and stock tracking. It
+                uses MySQL for data persistence and includes comprehensive
+                documentation for setup and usage.
+              </p>
 
-            <div class="project-title-row">
-              <h3 class="project-title">Spring Inventory Management</h3>
-              <span class="status released">RELEASED</span>
-            </div>
+              <ul class="skill-tags">
+                <li class="tag">Spring Boot</li>
+                <li class="tag">MySQL</li>
+                <li class="tag">REST</li>
+              </ul>
 
-            <p class="project-desc">
-                A Spring Boot inventory management system with RESTful APIs for CRUD operations, product categorization, and stock tracking. It uses MySQL for data persistence and includes comprehensive documentation for setup and usage.
-            </p>
-
-            <ul class="skill-tags">
-              <li class="tag">Spring Boot</li>
-              <li class="tag">MySQL</li>
-              <li class="tag">REST</li>
-            </ul>
-
-            <div class="project-footer">
+              <div class="project-footer">
                 <div class="project-actions">
-                    <a class="icon-btn" href="https://github.com/destrutoyt/spring-inventory-app" target="_blank" rel="noopener">
-                        <img src="./images/github-logo.svg" alt="" />
-                        <span>GitHub</span>
-                    </a>
+                  <a
+                    class="icon-btn"
+                    href="https://github.com/destrutoyt/spring-inventory-app"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="./images/github-logo.svg" alt="" />
+                    <span>GitHub</span>
+                  </a>
                 </div>
+              </div>
             </div>
+          </article>
 
-          </div>
-        </article>
+          <!-- PROJECT -->
+          <article class="project-card" data-category="qa-testing">
+            <div class="project-card-inner">
+              <div class="project-title-row">
+                <h3 class="project-title">Automated QA Suite</h3>
+                <span class="status released">RELEASED</span>
+              </div>
 
-        <!-- PROJECT -->
-        <article class="project-card" data-category="qa-testing">
-          <div class="project-card-inner">
+              <p class="project-desc">
+                E2E test suite for a demo e-commerce site using Playwright.
+                Covers user flows like registration, login, product search, and
+                checkout. Integrated with Docker and CI/CD pipelines. Incudes
+                documentation and test artifacts for easy setup and maintenance.
+              </p>
 
-            <div class="project-title-row">
-              <h3 class="project-title">Automated QA Suite</h3>
-              <span class="status released">RELEASED</span>
-            </div>
+              <ul class="skill-tags">
+                <li class="tag">Playwright</li>
+                <li class="tag">Docker</li>
+                <li class="tag">Documentation</li>
+                <li class="tag">CI/CD</li>
+              </ul>
 
-            <p class="project-desc">
-              E2E test suite for a demo e-commerce site using Playwright. Covers user flows like registration, login, product search, and checkout. Integrated with Docker and CI/CD pipelines. Incudes documentation and test artifacts for easy setup and maintenance.
-            </p>
-
-            <ul class="skill-tags">
-              <li class="tag">Playwright</li>
-              <li class="tag">Docker</li>
-            <li class="tag">Documentation</li>
-              <li class="tag">CI/CD</li>
-            </ul>
-
-            <div class="project-footer">
+              <div class="project-footer">
                 <div class="project-actions">
-                    <a class="icon-btn" href="https://github.com/destrutoyt/playwright-qa-project-automationexercise" target="_blank" rel="noopener">
-                        <img src="./images/github-logo.svg" alt="" />
-                        <span>GitHub</span>
-                    </a>
+                  <a
+                    class="icon-btn"
+                    href="https://github.com/destrutoyt/playwright-qa-project-automationexercise"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="./images/github-logo.svg" alt="" />
+                    <span>GitHub</span>
+                  </a>
                 </div>
+              </div>
             </div>
+          </article>
 
-          </div>
-        </article>
+          <!-- PROJECT -->
+          <article class="project-card" data-category="web-development">
+            <div class="project-card-inner">
+              <div class="project-title-row">
+                <h3 class="project-title">Interactive World Map</h3>
+                <span class="status released">RELEASED</span>
+              </div>
 
-        <!-- PROJECT -->
-        <article class="project-card" data-category="web-development">
-          <div class="project-card-inner">
+              <p class="project-desc">
+                An interactive world map built with AngularJS and using
+                WorldBankAPI, allowing users to explore countries, view data
+                visualizations, and learn about global statistics.
+              </p>
 
-            <div class="project-title-row">
-              <h3 class="project-title">Interactive World Map</h3>
-              <span class="status released">RELEASED</span>
-            </div>
+              <ul class="skill-tags">
+                <li class="tag">Angular</li>
+                <li class="tag">3rd Party API</li>
+                <li class="tag">RxJS</li>
+              </ul>
 
-            <p class="project-desc">
-              An interactive world map built with AngularJS and using WorldBankAPI, allowing users to explore countries, view data visualizations, and learn about global statistics.
-            </p>
-
-            <ul class="skill-tags">
-              <li class="tag">Angular</li>
-              <li class="tag">3rd Party API</li>
-              <li class="tag">RxJS</li>
-            </ul>
-
-            <div class="project-footer">
+              <div class="project-footer">
                 <div class="project-actions">
-                    <a class="icon-btn" href="https://github.com/destrutoyt/Interactive-World-Map" target="_blank" rel="noopener">
-                        <img src="./images/github-logo.svg" alt="" />
-                        <span>GitHub</span>
-                    </a>
+                  <a
+                    class="icon-btn"
+                    href="https://github.com/destrutoyt/Interactive-World-Map"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="./images/github-logo.svg" alt="" />
+                    <span>GitHub</span>
+                  </a>
                 </div>
+              </div>
             </div>
+          </article>
 
-          </div>
-        </article>
+          <!-- PROJECT -->
+          <article class="project-card" data-category="qa-testing">
+            <div class="project-card-inner">
+              <div class="project-title-row">
+                <h3 class="project-title">Cypress API Testing</h3>
+                <span class="status released">RELEASED</span>
+              </div>
 
-        <!-- PROJECT -->
-        <article class="project-card" data-category="qa-testing">
-          <div class="project-card-inner">
+              <p class="project-desc">
+                A Cypress test suite for API testing, covering CRUD operations,
+                authentication, and error handling. It includes Docker
+                integration for easy setup and CI/CD compatibility.
+              </p>
 
-            <div class="project-title-row">
-              <h3 class="project-title">Cypress API Testing</h3>
-              <span class="status released">RELEASED</span>
-            </div>
+              <ul class="skill-tags">
+                <li class="tag">Cypress</li>
+                <li class="tag">API</li>
+                <li class="tag">Docker</li>
+              </ul>
 
-            <p class="project-desc">
-              A Cypress test suite for API testing, covering CRUD operations, authentication, and error handling. It includes Docker integration for easy setup and CI/CD compatibility.
-            </p>
-
-            <ul class="skill-tags">
-              <li class="tag">Cypress</li>
-              <li class="tag">API</li>
-              <li class="tag">Docker</li>
-            </ul>
-
-            <div class="project-footer">
+              <div class="project-footer">
                 <div class="project-actions">
-                    <a class="icon-btn" href="https://github.com/destrutoyt/Cypress-API-Testing" target="_blank" rel="noopener">
-                        <img src="./images/github-logo.svg" alt="" />
-                        <span>GitHub</span>
-                    </a>
+                  <a
+                    class="icon-btn"
+                    href="https://github.com/destrutoyt/Cypress-API-Testing"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="./images/github-logo.svg" alt="" />
+                    <span>GitHub</span>
+                  </a>
                 </div>
+              </div>
             </div>
+          </article>
 
-          </div>
-        </article>
+          <!-- PROJECT -->
+          <article class="project-card" data-category="web-development">
+            <div class="project-card-inner">
+              <div class="project-title-row">
+                <h3 class="project-title">Taniti Tourism</h3>
+                <span class="status released">RELEASED</span>
+              </div>
 
-        <!-- PROJECT -->
-        <article class="project-card" data-category="web-development">
-          <div class="project-card-inner">
+              <p class="project-desc">
+                A tourism website for the fictional island of Taniti, built with
+                HTML, CSS, and JavaScript. It features a responsive design,
+                interactive elements, and showcases the island's attractions and
+                culture.
+              </p>
 
-            <div class="project-title-row">
-              <h3 class="project-title">Taniti Tourism</h3>
-              <span class="status released">RELEASED</span>
-            </div>
+              <ul class="skill-tags">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JS</li>
+              </ul>
 
-            <p class="project-desc">
-              A tourism website for the fictional island of Taniti, built with HTML, CSS, and JavaScript. It features a responsive design, interactive elements, and showcases the island's attractions and culture.
-            </p>
-
-            <ul class="skill-tags">
-              <li class="tag">HTML</li>
-              <li class="tag">CSS</li>
-              <li class="tag">JS</li>
-            </ul>
-
-            <div class="project-footer">
+              <div class="project-footer">
                 <div class="project-actions">
-                    <a class="icon-btn" href="https://github.com/destrutoyt/taniti-website" target="_blank" rel="noopener">
-                        <img src="./images/github-logo.svg" alt="" />
-                        <span>GitHub</span>
-                    </a>
+                  <a
+                    class="icon-btn"
+                    href="https://github.com/destrutoyt/taniti-website"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="./images/github-logo.svg" alt="" />
+                    <span>GitHub</span>
+                  </a>
 
-                <a class="icon-btn" href="https://destrutoyt.github.io/taniti-website/" target="_blank">
-                    <img src="./images/live-web.svg" alt="">
+                  <a
+                    class="icon-btn"
+                    href="https://destrutoyt.github.io/taniti-website/"
+                    target="_blank"
+                  >
+                    <img src="./images/live-web.svg" alt="" />
                     <span>Live</span>
-                </a>
+                  </a>
                 </div>
+              </div>
             </div>
-
-          </div>
-        </article>
-      </div>
-    </section>
-        <div class="pagination">
+          </article>
+        </div>
+      </section>
+      <div class="pagination">
         <button id="prevBtn">Previous</button>
         <button id="nextBtn">Next</button>
-    </div>
+      </div>
+    </main>
 
-  </main>
-
-
-  <!-- RESTORED FOOTER -->
-  <footer>
-    <p>Made with ❤️ by Miguel Garces Lenis</p>
-    <div class="social-icons">
-      <a href="https://github.com/destrutoyt" target="_blank"><img src="./images/github-logo.svg"></a>
-      <a href="https://www.linkedin.com/in/miguelgarcesl/" target="_blank"><img src="./images/linkedin-logo.svg"></a>
-      <a href="https://leetcode.com/u/destrutoyt/" target="_blank"><img src="./images/leetcode-logo.svg"></a>
-    </div>
-  </footer>
-
-</body>
+    <!-- RESTORED FOOTER -->
+    <footer>
+      <p>Made with ❤️ by Miguel Garces Lenis</p>
+      <div class="social-icons">
+        <a href="https://github.com/destrutoyt" target="_blank"
+          ><img src="./images/github-logo.svg"
+        /></a>
+        <a href="https://www.linkedin.com/in/miguelgarcesl/" target="_blank"
+          ><img src="./images/linkedin-logo.svg"
+        /></a>
+        <a href="https://leetcode.com/u/destrutoyt/" target="_blank"
+          ><img src="./images/leetcode-logo.svg"
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>
