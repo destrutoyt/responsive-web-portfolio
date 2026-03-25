@@ -98,10 +98,10 @@ header {
 
 /* == BUTTON STYLES == */
 .menu-container button {
-  background-color: var(--mint-aqua);
+  background-color: var(--peachy);
   color: white;
   border: none;
-  font-weight: 700;
+  font-weight: 800;
   font-family: 'Rubik', sans-serif;
   padding: 14px 22px;
   border-radius: 16px;
@@ -120,7 +120,7 @@ header {
 }
 .menu-container button.is-active {
   transform: translateY(-1px);
-  background-color: var(--peachy);
+  background-color: var(--peachy-blue);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
@@ -345,18 +345,18 @@ header {
 }
 
 .skills-card:nth-child(1) {
-  background: rgb(106, 233, 155);
-  border: 1px solid rgba(106, 233, 155, 0.425);
+  background: rgb(91, 209, 154);
+  border: 1px solid rgba(91, 209, 154, 0.425);
 }
 
 .skills-card:nth-child(2) {
-  background: rgb(131, 238, 206);
-  border: 1px solid rgba(131, 238, 206, 0.425);
+  background: rgb(241, 196, 97);
+  border: 1px solid rgba(241, 196, 97, 0.425);
 }
 
 .skills-card:nth-child(3) {
-  background: rgb(241, 196, 97);
-  border: 1px solid rgba(241, 196, 97, 0.425);
+  background: rgb(157, 172, 238);
+  border: 1px solid rgba(157, 172, 238, 0.425);
 }
 
 /* Header */
@@ -431,9 +431,9 @@ header {
   padding: 0.45rem 0.65rem;
   border-radius: 999px;
 
-  border: 1px solid #6ecaab75;
-  background: #6ecaab;
-
+  border: 1px solid #c99a5d;
+  background: #ce9b5a;
+  color: white;
   font-size: 0.78rem;
   font-weight: 600;
   white-space: nowrap;

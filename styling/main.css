@@ -10,7 +10,9 @@
   --neon-yellow: #ffcc00;
   --neon-green: #4eea66;
 
+  --dev-status: rgba(206, 113, 8, 0.925);
   --peachy: #ff7e5f;
+  --light-peachy: rgba(255, 173, 122, 0.863);
   --saffron: rgb(255, 178, 36);
   --light-warm-color: rgba(221, 189, 141, 0.968);
   --dark-beige-transparent: rgba(170, 142, 108, 0.833);
@@ -29,6 +31,11 @@
   --sky-blue: #8bacca;
   --soft-pink: #f8cbcb;
   --mint-aqua: #43c287;
+
+  --released-status: rgba(89, 190, 106, 0.925);
+  --coming-status: rgba(128, 128, 128, 0.8);
+  --demo-status: rgba(130, 95, 255, 0.8);
+  --dev-status: rgba(206, 113, 8, 0.925);
 }
 
 /* ===== GENERAL STYLYING ===== */
